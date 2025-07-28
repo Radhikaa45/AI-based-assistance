@@ -1,22 +1,27 @@
-# AI_assistant_for_farmers
-drdo project
-prerquisites
-1. python
-2. langchain
-3. ollama - llama3 model
-4. chroma db 
-5. embedding model: mxbai-embed-large
-6. torch
+DRDO Internship Project – AI Assistant for Agriculture
+This project is an AI-based assistant designed to answer agriculture-related queries using custom PDF datasets. It uses LangChain, Ollama (with LLaMA 3), ChromaDB, and mxbai-embed-large for embeddings.
 
+*Tech Stack & Prerequisites
+Python ≥ 3.8
+LangChain
+Ollama
+LLaMA 3 model (via Ollama)
+Embedding model: mxbai-embed-large
+ChromaDB
+Torch
 
+*Setup Instructions
+  Install Ollama
+       -Download and install from https://ollama.com
+*Open terminal and run:
+   ollama pull llama3
+   ollama pull mxbai-embed-large
+*Start Ollama server
+   ollama serve
 
-- download ollama then run command  ``ollama pull llama3`` or any model you like to act as the llm model
-    also run command ``ollama pull mxbai-embed-large``
+Ensure the server is running in the background before using the app.
 
-- after install ollama
-    exit ollama and run command ``ollama serve``\
-- create the folder called text_dataset to input all the dataset in pdf format and run the python file by ``python database.py``
-- after the textdataset file has all your pdf files run the command ``python app.py`` to use the ui.
-username-"farmin2"
-password- "123"
+* Login Credentials
+   Username: farmin2
+   Password: 123
 
